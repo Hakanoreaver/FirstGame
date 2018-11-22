@@ -23,7 +23,7 @@ public class TitleScreen implements Screen {
     public TitleScreen(Game aGame) {
         game = aGame;
         stage = new Stage(new ScreenViewport());
-        Label title = new Label("Woodcutting Game", FirstGame.skin, "big");
+        Label title = new Label("Platforming", FirstGame.skin, "big");
         title.setAlignment(Align.center);
         title.setY(Gdx.graphics.getHeight()*2/3);
         title.setWidth(Gdx.graphics.getWidth());

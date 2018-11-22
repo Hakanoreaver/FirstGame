@@ -26,6 +26,7 @@ public class FirstGame extends Game {
 	Texture img;
 	private Stage stage;
 	public static Skin skin;
+	public static boolean paused;
 	
 	@Override
 	public void create () {

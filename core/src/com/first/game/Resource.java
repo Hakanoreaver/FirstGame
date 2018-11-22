@@ -6,13 +6,14 @@ import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 
-public class Tree extends Actor{
+public class Resource extends Actor{
 
-    private Texture texture;
+    protected Texture texture;
+    protected String type;
 
-    public Tree (float x, float y) {
+    public Resource(float x, float y, String type) {
         this.setPosition(x , y);
-        texture = new Texture(Gdx.files.internal("Textures/tree.png"));
+        texture = new Texture(Gdx.files.internal("Textures/" + type + ".png"));
     }
 
     @Override
