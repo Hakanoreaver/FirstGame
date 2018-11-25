@@ -14,7 +14,7 @@ public class Terrain extends Actor {
     String type;
     public Terrain(float x, float y) {
         this.setPosition(x , y);
-        texture = new Texture(Gdx.files.internal("Textures/tree.png"));
+        texture = new Texture(Gdx.files.internal(FirstGame.fileExtension + "Textures/tree.png"));
         System.out.println(texture.getWidth());
         setBounds(x,y,texture.getWidth(), texture.getHeight());
     }

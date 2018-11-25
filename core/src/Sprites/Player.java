@@ -15,7 +15,7 @@ public class Player extends Actor {
     boolean grounded;
     public Player(float x, float y) {
         this.setPosition(x , y);
-        texture = new Texture(Gdx.files.internal("explosion/tile056.png"));
+        texture = new Texture(Gdx.files.internal(FirstGame.fileExtension + "explosion/tile056.png"));
         setBounds(x,y,50, 50);
     }
 

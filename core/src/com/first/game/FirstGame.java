@@ -24,13 +24,14 @@ import javax.swing.*;
 public class FirstGame extends Game {
 	SpriteBatch batch;
 	Texture img;
+	public static String fileExtension = "";
 	private Stage stage;
 	public static Skin skin;
 	public static boolean paused;
 	
 	@Override
 	public void create () {
-		skin = new Skin(Gdx.files.internal("skin/glassy-ui.json"));
+		skin = new Skin(Gdx.files.internal(fileExtension + "skin/glassy-ui.json"));
 		this.setScreen(new TitleScreen(this));
 	}
 
